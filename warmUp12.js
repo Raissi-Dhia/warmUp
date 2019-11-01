@@ -22,3 +22,18 @@ Technical Details
     -The maximum size of a range will be 100 integers
     -The starting number of a range will be: 0 < n < 100
  */
+
+ function slInteger(string,integer) {
+ 	var arr = string.split(',') ;
+ 	var arr1 = Array(integer) ;
+ 	for(i = 0; i < arr.length; i++){
+ 		arr1.push(arr[i]) ; 
+ 	}
+ 	 ;
+var maxi = Math.max.apply(Math,arr1)
+var mini = Math.min.apply(Math,arr1)
+var fArray = [] ; 
+
+	return fArray.push(mini) 
+ 	
+ }
