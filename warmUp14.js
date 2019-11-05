@@ -17,7 +17,17 @@ Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
 */
+// basically what we wanted to do here is to itterate over the array and 
 
 var maxProfit = function(prices) {
   // YOUR CODE HERE
-};
+  var profit = 0 ;
+  for(var i = 1;i < prices.length; i++){
+  	if(prices[i] > prices[i-1]){
+  		profit = profit +  prices[i] - prices[i -1] ;
+  	}
+  }
+  return profit 
+  };
+ 
+
