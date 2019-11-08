@@ -26,7 +26,14 @@
 // word[i] is an English lowercase letter.
 
 // ​
-// ​
-// var calculateTime = function(keyboard, word) {
-    
-// };
+// ​we are going to  itterate over the word and set an initial variable at index 0 than we are going to add to the result the difference between the index of the letter of the world and the old index and then assign to the variable the index of the old word ;
+var calculateTime = function(keyboard, word) {
+  var array = keyboard.split("");
+   var result = 0 ;
+  for(var i=0; i < word.length; i++){
+    var old = keyboard.charAt(0);
+  result = result + Math.abs(array.indexOf(word.charAt(i)) - array.indexOf(old));
+    old = array.indexOf(word.charAt(i));
+  }
+  return result;
+};
